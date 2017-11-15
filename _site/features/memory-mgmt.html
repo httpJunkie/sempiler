@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92238364-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-92238364-2');
+    </script>
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Memory MGMT | test</title>
+<meta property="og:title" content="Memory MGMT" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/features/memory-mgmt.html" />
+<meta property="og:url" content="http://localhost:4000/features/memory-mgmt.html" />
+<meta property="og:site_name" content="test" />
+<script type="application/ld+json">
+{"name":null,"description":null,"author":null,"@type":"WebPage","url":"http://localhost:4000/features/memory-mgmt.html","publisher":null,"image":null,"headline":"Memory MGMT","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<meta property="og:image" content="/images/og.png"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/style.css?v=2a545ea4e648e0ec22fbfad7de3702288990c072">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+    <script>document.title = document.title.toUpperCase();</script>
+  </head>
+  <body>
+    <section class="page-header">
+      <nav class='quick-links lozenge'>
+    <a href='/'>
+        <span title='Home'>
+            <img src='/images/home.png' alt='Home logo'/>
+        </span>
+    </a>
+    <a href='http://github.com/QuantumCommune/test' target="_blank">
+        <span title='Github'>
+            <img src='/images/github-logo2.png' alt='Github logo'/>
+        </span>
+    </a>
+    <a href='https://marketplace.visualstudio.com/items?itemName=QuantumCommune.sempiler' target="_blank">
+        <span title='Visual Studio Code'>
+            <img src='/images/vsc-logo2.png' alt='Visual Studio Code logo'/>
+        </span>
+    </a>
+    <a href='https://www.youtube.com/playlist?list=PL5Xdzgw07RtR9SMS-ZxZFhYbuSBcygE9i' target="_blank">
+        <span title='YouTube'>
+            <img src='/images/yt-logo.png' alt='YouTube logo'/>
+        </span>
+    </a>
+    <a href='https://www.facebook.com/sempiler/' target="_blank">
+        <span title='Facebook'>
+            <img src='/images/fb-logo.png' alt='Facebook logo'/>
+        </span>
+    </a>
+    <a href='http://twitter.com/ComethTheNerd' target="_blank">
+        <span title='Twitter'>
+            <img src='/images/twitter-logo.png' alt='Twitter logo'/>
+        </span>
+    </a>
+    <a href='https://www.patreon.com/sempiler' title='Patreon' target="_blank">
+        <span title='Patreon'>
+            <img src='/images/patreon-logo.png' alt='Patreon logo'/>
+        </span>
+    </a>
+</nav>
+      
+      <h1 class="project-name">Memory MGMT</h1>
+
+    </section>
+
+    <section class="main-content">
+      
+<div class='video-container'>
+    <div class='lozenge'>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vODbPXZR8q0" frameborder="0" gesture="media" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<ul class='feature-meta lozenge'>
+
+<li>
+    <span title="the earliest Sempiler version to support this feature">
+        since <a href="/latest#version"><strong>0.1</strong></a>
+    </span>
+</li>
+
+
+<li>
+    <span title="current Sempiler targets that support this feature">
+        targets 
+        
+        
+            <a href="/latest#c++">C++</a>
+        
+    </span>
+</li>
+
+</ul>
+
+<div class="divider">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<p>The following examples will assume the source language is TypeScript, but other source languages will use equivalent semantics for providing memory management constructs.</p>
+
+<aside>
+    Semantic transpilation is agnostic of any particular source language or target context
+</aside>
+
+<h2 id="pointers"><a name="pointers"></a>Pointers</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">type ptr&lt;T&gt; = number &amp; { pointee : T }</code></td>
+      <td>Symbolic pointer construct</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="addresses"><a name="addresses"></a>Addresses</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">addressof&lt;T&gt;(t : T) : ptr&lt;T&gt;</code></td>
+      <td>Get a pointer to a datum</td>
+      <td>Type parameter is inferred from argument, you do not need to explicitly state it</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dereferencing"><a name="dereferencing"></a>Dereferencing</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">.pointee : T</code></td>
+      <td>Dereference a pointer</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="arithmetic"><a name="arithmetic"></a>Arithmetic</h3>
+
+<p>The pointer definition aliases <code class="highlighter-rouge">number</code> to allow for direct arithmetic on an instance.</p>
+
+<h2 id="new"><a name="new"></a>New</h2>
+
+<p>For the following object initialization examples we will use a placeholder <code class="highlighter-rouge">Foo</code> constructor call for demonstration purposes</p>
+
+<h3 id="stack-allocation"><a name="stack-allocation"></a>Stack Allocation</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">new Foo() : Foo</code></td>
+      <td>Create a stack allocated instance of <code class="highlighter-rouge">Foo</code></td>
+      <td>Stack allocated memory is deallocated automatically when the enclosing stack frame is popped</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="heap-allocation"><a name="heap-allocation"></a>Heap Allocation</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">heap(new Foo()) : ptr&lt;Foo&gt;</code></td>
+      <td>Returns a pointer to a newly heap allocated instance of <code class="highlighter-rouge">Foo</code></td>
+      <td>Heap allocated memory needs to be deleted explicitly</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="object-literals"><a name="object-literals"></a>Object Literals</h3>
+
+<p>Limited support for object literals exists, and the type must be clearly stated</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">&lt;Foo&gt;{ bar : 1 }</code></td>
+      <td>Create a stack allocated instance of <code class="highlighter-rouge">Foo</code></td>
+      <td><code class="highlighter-rouge">Foo</code> is inferred from type assertion</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">f : Foo = { bar : 1 }</code></td>
+      <td>Create a stack allocated instance of <code class="highlighter-rouge">Foo</code></td>
+      <td><code class="highlighter-rouge">Foo</code> is inferred from left hand side type annotation</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">{ bar : 1 } as Foo</code></td>
+      <td>Create a stack allocated instance of <code class="highlighter-rouge">Foo</code></td>
+      <td><code class="highlighter-rouge">Foo</code> is inferred from <code class="highlighter-rouge">as</code> expression</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="delete"><a name="delete"></a>Delete</h3>
+
+<p>Heap allocated memory should be explicitly deleted using the original pointer returned by <code class="highlighter-rouge">heap</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">delete p.pointee</code></td>
+      <td>Delete the memory pointed to by <code class="highlighter-rouge">ptr</code> instance <code class="highlighter-rouge">p</code></td>
+      <td>Must be called on <code class="highlighter-rouge">.pointee</code> not <code class="highlighter-rouge">p</code> directly</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example"><a name="example"></a>Example</h2>
+
+<script src="https://gist.github.com/ComethTheNerd/0380b00fde1c1a55d9808e6b25746e8e.js"> </script>
+
+
+
+      <div class="divider">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+      <nav class='quick-links lozenge'>
+    <a href='/'>
+        <span title='Home'>
+            <img src='/images/home.png' alt='Home logo'/>
+        </span>
+    </a>
+    <a href='http://github.com/QuantumCommune/test' target="_blank">
+        <span title='Github'>
+            <img src='/images/github-logo2.png' alt='Github logo'/>
+        </span>
+    </a>
+    <a href='https://marketplace.visualstudio.com/items?itemName=QuantumCommune.sempiler' target="_blank">
+        <span title='Visual Studio Code'>
+            <img src='/images/vsc-logo2.png' alt='Visual Studio Code logo'/>
+        </span>
+    </a>
+    <a href='https://www.youtube.com/playlist?list=PL5Xdzgw07RtR9SMS-ZxZFhYbuSBcygE9i' target="_blank">
+        <span title='YouTube'>
+            <img src='/images/yt-logo.png' alt='YouTube logo'/>
+        </span>
+    </a>
+    <a href='https://www.facebook.com/sempiler/' target="_blank">
+        <span title='Facebook'>
+            <img src='/images/fb-logo.png' alt='Facebook logo'/>
+        </span>
+    </a>
+    <a href='http://twitter.com/ComethTheNerd' target="_blank">
+        <span title='Twitter'>
+            <img src='/images/twitter-logo.png' alt='Twitter logo'/>
+        </span>
+    </a>
+    <a href='https://www.patreon.com/sempiler' title='Patreon' target="_blank">
+        <span title='Patreon'>
+            <img src='/images/patreon-logo.png' alt='Patreon logo'/>
+        </span>
+    </a>
+</nav>
+
+      <footer class="site-footer">
+        <div class='logo'>
+            <img src='/images/logo.png'/>
+            &copy; 2017
+        </div>
+      </footer>
+    </section>
+
+    <script>
+        if(document.querySelectorAll)
+        {
+          (function() {
+            function addHashLink(anchor) {
+              var name = anchor.getAttribute('name');
+              var heading = anchor.parentNode;
+              
+              heading.addEventListener('click', function () { location.hash = name });
+              heading.setAttribute('style', 'cursor:pointer');
+            }
+
+            document.querySelectorAll('h2 a[name]').forEach(addHashLink);
+            document.querySelectorAll('h3 a[name]').forEach(addHashLink);
+
+          })();
+        }
+      </script>
+
+  </body>
+</html>

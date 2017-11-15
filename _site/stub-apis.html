@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92238364-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-92238364-2');
+    </script>
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Stub APIS | test</title>
+<meta property="og:title" content="Stub APIS" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/stub-apis.html" />
+<meta property="og:url" content="http://localhost:4000/stub-apis.html" />
+<meta property="og:site_name" content="test" />
+<script type="application/ld+json">
+{"name":null,"description":null,"author":null,"@type":"WebPage","url":"http://localhost:4000/stub-apis.html","publisher":null,"image":null,"headline":"Stub APIS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<meta property="og:image" content="/images/og.png"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/style.css?v=2a545ea4e648e0ec22fbfad7de3702288990c072">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+    <script>document.title = document.title.toUpperCase();</script>
+  </head>
+  <body>
+    <section class="page-header">
+      <nav class='quick-links lozenge'>
+    <a href='/'>
+        <span title='Home'>
+            <img src='/images/home.png' alt='Home logo'/>
+        </span>
+    </a>
+    <a href='http://github.com/QuantumCommune/test' target="_blank">
+        <span title='Github'>
+            <img src='/images/github-logo2.png' alt='Github logo'/>
+        </span>
+    </a>
+    <a href='https://marketplace.visualstudio.com/items?itemName=QuantumCommune.sempiler' target="_blank">
+        <span title='Visual Studio Code'>
+            <img src='/images/vsc-logo2.png' alt='Visual Studio Code logo'/>
+        </span>
+    </a>
+    <a href='https://www.youtube.com/playlist?list=PL5Xdzgw07RtR9SMS-ZxZFhYbuSBcygE9i' target="_blank">
+        <span title='YouTube'>
+            <img src='/images/yt-logo.png' alt='YouTube logo'/>
+        </span>
+    </a>
+    <a href='https://www.facebook.com/sempiler/' target="_blank">
+        <span title='Facebook'>
+            <img src='/images/fb-logo.png' alt='Facebook logo'/>
+        </span>
+    </a>
+    <a href='http://twitter.com/ComethTheNerd' target="_blank">
+        <span title='Twitter'>
+            <img src='/images/twitter-logo.png' alt='Twitter logo'/>
+        </span>
+    </a>
+    <a href='https://www.patreon.com/sempiler' title='Patreon' target="_blank">
+        <span title='Patreon'>
+            <img src='/images/patreon-logo.png' alt='Patreon logo'/>
+        </span>
+    </a>
+</nav>
+      
+      <h1 class="project-name">Stub APIS</h1>
+
+    </section>
+
+    <section class="main-content">
+      
+
+<p>A declarative (or ‘stub’) API is a symbolic definition of a native API or library that <strong>exists in the target context</strong>.</p>
+
+<p>For example, I may be working in TypeScript and want to leverage the <code class="highlighter-rouge">CoreBluetooth</code> framework in Swift.</p>
+
+<p>I can just provide the symbols for that API in a <code class="highlighter-rouge">.d.ts</code> file and write <strong>code against the contract</strong>.</p>
+
+<p>When my TypeScript code is sempiled and built in the target context, those symbolic links will resolve correctly.</p>
+
+<p>There is <strong>no dynamic interop</strong> between languages here, we are just using the same names and types in our source language to express our intent in the target context - this is what is meant by ‘semantic transpilation’.</p>
+
+<h2 id="composition"><a name="composition"></a>Composition</h2>
+
+<p>Stub APIs have a <code class="highlighter-rouge">.d.ts</code> file extension in TypeScript, because we do not need to provide implementations.</p>
+
+<p>In your source language insists on implementations just return any value that satisfies the type checker. The return value is arbitrary and no bearing on the emission.</p>
+
+<h2 id="partial"><a name="partial"></a>Partial</h2>
+
+<p>Stub APIs can be partially implemented, you need only provide declarations for the native symbols (ie. symbols that are implemented on the target platform) you reference in your source code.</p>
+
+<p>You can incrementally add to these stubs as and when you need to throughout the life of the project.</p>
+
+<script src="https://gist.github.com/ComethTheNerd/a8aa6f9a35e8dc110ba408985e577cef.js"> </script>
+
+<h2 id="production"><a name="production"></a>Production</h2>
+
+<p>Even though stub APIs are lightweight and quick to produce, you may not need to write and maintain the stub API files yourself. For example:</p>
+
+<ul>
+  <li>Your source code does not use any native symbols</li>
+  <li>The definitions you need have been provided by another member of the Sempiler community (we encourage you to share any you write to help others!)</li>
+  <li>You can auto generate the stub API declarations from the source code of the target platform (a future discussion beyond the scope of this topic!)</li>
+</ul>
+
+<p>Stub APIs require little overhead to write, and give you the power of linking against libraries and functionality in the target context with <strong>zero cost</strong>.</p>
+
+<h2 id="core"><a name="core"></a>Core</h2>
+
+<p>Every target platform (eg. C++) will provide a core stub API, containing intrinsic and global constructs that exist for that target construct. For example, the <code class="highlighter-rouge">__FILE__</code> and <code class="highlighter-rouge">__LINE__</code> macros.</p>
+
+<p>Remember we do not abstract away the target platform, so core symbols will only resolve if your target context declares them.</p>
+
+<p>Source code for common functionality can still be sempiled to different platforms, as long as it does not use platform-specific symbols, or those symbols exist on all targets, or it provides some other mechanism for abstracting away any target context differences.</p>
+
+
+      <div class="divider">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+      <nav class='quick-links lozenge'>
+    <a href='/'>
+        <span title='Home'>
+            <img src='/images/home.png' alt='Home logo'/>
+        </span>
+    </a>
+    <a href='http://github.com/QuantumCommune/test' target="_blank">
+        <span title='Github'>
+            <img src='/images/github-logo2.png' alt='Github logo'/>
+        </span>
+    </a>
+    <a href='https://marketplace.visualstudio.com/items?itemName=QuantumCommune.sempiler' target="_blank">
+        <span title='Visual Studio Code'>
+            <img src='/images/vsc-logo2.png' alt='Visual Studio Code logo'/>
+        </span>
+    </a>
+    <a href='https://www.youtube.com/playlist?list=PL5Xdzgw07RtR9SMS-ZxZFhYbuSBcygE9i' target="_blank">
+        <span title='YouTube'>
+            <img src='/images/yt-logo.png' alt='YouTube logo'/>
+        </span>
+    </a>
+    <a href='https://www.facebook.com/sempiler/' target="_blank">
+        <span title='Facebook'>
+            <img src='/images/fb-logo.png' alt='Facebook logo'/>
+        </span>
+    </a>
+    <a href='http://twitter.com/ComethTheNerd' target="_blank">
+        <span title='Twitter'>
+            <img src='/images/twitter-logo.png' alt='Twitter logo'/>
+        </span>
+    </a>
+    <a href='https://www.patreon.com/sempiler' title='Patreon' target="_blank">
+        <span title='Patreon'>
+            <img src='/images/patreon-logo.png' alt='Patreon logo'/>
+        </span>
+    </a>
+</nav>
+
+      <footer class="site-footer">
+        <div class='logo'>
+            <img src='/images/logo.png'/>
+            &copy; 2017
+        </div>
+      </footer>
+    </section>
+
+    <script>
+        if(document.querySelectorAll)
+        {
+          (function() {
+            function addHashLink(anchor) {
+              var name = anchor.getAttribute('name');
+              var heading = anchor.parentNode;
+              
+              heading.addEventListener('click', function () { location.hash = name });
+              heading.setAttribute('style', 'cursor:pointer');
+            }
+
+            document.querySelectorAll('h2 a[name]').forEach(addHashLink);
+            document.querySelectorAll('h3 a[name]').forEach(addHashLink);
+
+          })();
+        }
+      </script>
+
+  </body>
+</html>

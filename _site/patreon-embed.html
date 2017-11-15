@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+      <meta name="description" content=""/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="/assets/css/style.css?v=2a545ea4e648e0ec22fbfad7de3702288990c072">  
+  </head>  
+  <body>
+    <section class="main-content">
+      <aside class="summary" style="display:flex;flex-direction:column;align-items:center;color:#bbbbbb">
+    <div class="strikeout">lag</div>
+    <div class="strikeout">bloat</div>
+    <div class="strikeout">automagic</div>
+    <div class="strikeout">frameworks</div>
+    <div class="strikeout">virtual machines</div>
+    <div class="strikeout">infested stacktraces</div>
+</aside>
+
+<aside class="summary"> 
+    Just x-platform, native, easy to debug code <br /> straight from your favourite source language.
+</aside>
+
+<div class="divider">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<h2 id="motivation"><a name="motivation"></a>Motivation</h2>
+
+<h3 id="syntax-slog"><a name="syntax-slog"></a>Syntax Slog</h3>
+
+<p>As developers we contribute to multiple projects across multiple platforms.</p>
+
+<p>Our job is to <strong>communicate our intent to the computer</strong>. Yet we <strong>waste countless hours learning equivalent syntaxes</strong> to communicate the exact same ideas, sometimes even on the same platform.</p>
+
+<aside>
+    Extra syntax requires <br />extra effort that gets us<br /> no closer to our goal
+</aside>
+
+<p>And some of these languages are so old they have to crowbar the syntax for new features in, resulting in code that is hard to read and write. And then the compiler keeps shouting at you. And then you <strong>die inside</strong>.</p>
+
+<h3 id="optimizations-vs-native"><a name="optimizations-vs-native"></a>Optimizations vs Native</h3>
+
+<p>We fight endless flame wars online. The web world aggressively optimizes whilst classicists rage because <strong>native always wins</strong>.</p>
+
+<p>We live in a world where the machines we use are quicker than ever but we settle for writing apps that are just good <em>enough</em>.</p>
+
+<aside>
+They lag on lists. <br />They gorge on memory. <br />They drain battery.
+</aside>
+
+<aside class="gallery">
+    <ul>
+        <li>
+            <img src="/images/i-am-devloper-tweet.png" alt="i am devloper tweet" />
+        </li>
+    </ul>
+</aside>
+
+<p>And yet still we hack away to bridge <strong>virtual machines in places they shouldn’t be</strong>, ignoring the voice in our heads that screams how dirty it is, or the <strong>user experience that suffers</strong> as a result.</p>
+
+<h3 id="bad-abstractions"><a name="bad-abstractions"></a>Bad Abstractions</h3>
+
+<p>The cost of forcing the semantics of our favourite source language onto a different platform is not free, and abstracting away the target platform in an effort to <em>‘ship it yesterday!’</em> is <strong>putting the business people before the end user</strong>.</p>
+
+<aside>
+Platforms are not all equal. <br />
+They don't feel equal to the user. <br />
+They don't look equal to the programmer.
+</aside>
+
+<p>These tools and frameworks are prime examples:</p>
+
+<aside class="gallery">
+    <ul>
+        <li>
+            <img src="/images/electron-logo.png" alt="electron logo" />
+        </li>
+        <li>
+            <img src="/images/chromium-logo.png" alt="chromium logo" />
+        </li>
+        <li>
+            <img src="/images/xamarin-logo.png" alt="xamarin logo" />
+        </li>
+        <li>
+            <img src="/images/react-native-logo.png" alt="react native logo" />
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="/images/ionic-logo.png" alt="ionic logo" />
+        </li>
+        <li>
+            <img src="/images/unity-logo.png" alt="unity logo" />
+        </li>
+        <li>
+            <img src="/images/node-logo.png" alt="node js logo" />
+        </li>
+        <li>
+            <img src="/images/winjs-logo.png" alt="win js logo" />
+        </li>
+    </ul>
+</aside>
+
+<p>And they are popular for some good reasons:</p>
+
+<ul>
+  <li>Making programming more accessible than ever</li>
+  <li>Promoting the use of a single programming language</li>
+  <li>Preserving the programmer’s intent</li>
+</ul>
+
+<p>But even with that in mind we can <strong>do so much better</strong> whilst still delivering software <strong>on budget and on time</strong>.</p>
+
+<p>This is what we get from <strong>abstracting away platforms and thinking they are equal</strong>:</p>
+
+<aside class="gallery">
+    <ul>
+        <li>
+            <img src="/images/marcos-besteiro-tweet.png" alt="marcos besteiro tweet" />
+        </li>
+        <li>
+            <img src="/images/miguel-de-icaza-tweet.png" alt="miguel de icaza tweet" />
+        </li>
+    </ul>
+</aside>
+
+<p>Not to mention the <strong>debugging experience is soul destroying</strong> because of all the framework layers. The stacktrace is not deep enough to actually show me my code:</p>
+
+<aside class="gallery">
+    <ul>
+        <li>
+            <img src="/images/react-native-stacktrace.png" />
+        </li>
+        <li>
+            <img src="/images/react-stacktrace.png" />
+        </li>
+    </ul>
+</aside>
+
+<p>And despite branding to the contrary, <strong>‘learn once, run anywhere’</strong> is <strong>‘write once, run anywhere’</strong> in reality.</p>
+
+<h3 id="congruent-concepts"><a name="congruent-concepts"></a>Congruent Concepts</h3>
+
+<p>We can write code that is mindful of platform differences, whilst still leveraging the conceptual commonality between them:</p>
+
+<aside>
+    Data structures, Algorithms, Memory, Functions, Variables, Packages, OOP
+</aside>
+
+<p>This commonality is what makes semantic transpilation feel so <strong>intuitive</strong>. We focus only on the <strong>semantics of a target context</strong>.</p>
+
+<p>How each one of those concepts is implemented. It’s <strong>constraints</strong>. It’s <strong>interface</strong>. It’s <strong>quirks</strong>.</p>
+
+<div class="divider">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<h2 id="sempiler"><a name="sempiler"></a>Sempiler</h2>
+
+<p>Sempiler is a portmanteau of <strong>semantic transpiler</strong>. How it works is simple:</p>
+
+<h3 id="take-your-favourite-source-language"><a name="take-your-favourite-source-language"></a>Take your favourite source language</h3>
+
+<ul>
+  <li>A language that is <strong>second nature to you</strong></li>
+  <li>A language that has an <strong>expressive syntax</strong> and a clear type system</li>
+  <li>A language that is <strong>NOT a boundary to communicating intent</strong></li>
+</ul>
+
+<h3 id="take-a-target-language-or-platform"><a name="take-a-target-language-or-platform"></a>Take a target language or platform</h3>
+
+<ul>
+  <li>Understand the <strong>symbols and semantics</strong> of the target</li>
+  <li>Do <strong>NOT</strong> waste effort learning the syntax of the target</li>
+</ul>
+
+<h3 id="write-source-code-with-the-target-in-mind"><a name="write-source-code-with-the-target-in-mind"></a>Write source code with the target in mind</h3>
+
+<ul>
+  <li>Use declarative <a href="stub-apis">stub APIs</a> that <strong>represent the symbols and functionality</strong> of the target (eg. <a href="features/memory-mgmt#pointers">pointers</a>)</li>
+  <li>Use Sempiler to <strong>validate source code statically against the semantics</strong> of the target, and <strong>emit native code</strong> for the target</li>
+  <li>Do <strong>NOT</strong> abstract away the target platform</li>
+</ul>
+
+<aside>
+    SOURCE CODE IS WRITTEN IN THE SOURCE LANGUAGE
+    <br /><br />
+    BUT NOT EXECUTED IN THE SOURCE CONTEXT
+</aside>
+
+<p>That is why we do not need to synthesize features in the source language, or use frameworks on the target platform.</p>
+
+<p>That is why writing code against <strong>strongly-typed, purely symbolic APIs</strong> works.</p>
+
+<p>For example, writing a <code class="highlighter-rouge">flexbox</code> UI natively with no overheads:</p>
+
+<script src="https://gist.github.com/ComethTheNerd/f866b5268ce2938f906723630c9459f6.js"> </script>
+
+<p>When your code is sempiled those symbols will be <strong>valid in the emitted native code</strong> where they are implemented:</p>
+
+<script src="https://gist.github.com/ComethTheNerd/977232f2e4914f332c7ce364d8d7d9d8.js"> </script>
+
+<p>Sempiler preserves programmer intent so the emitted code <strong>feels the same</strong> as the source code, and is <strong>easy to debug</strong>.</p>
+
+<div class="divider">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<h3 id="it-is-not"><a name="it-is-not"></a>it is not</h3>
+
+<aside>
+    <ul class="cross-list">
+        <li>Write once, run anywhere</li>
+        <li>Automagic black box</li>
+        <li>Dynamic interop</li>
+        <li>New framework</li>
+        <li>New language</li>
+    </ul>
+</aside>
+
+<h3 id="it-is"><a name="it-is"></a>it is</h3>
+
+<aside>
+    <ul class="tick-list">
+        <li>Intuitive</li>
+        <li>Zero overhead</li>
+        <li>Code Transpiler</li>
+        <li>Static validator</li>
+        <li>Productivity boost</li>
+    </ul>
+</aside>
+
+    </section>
+  </body>
+</html>

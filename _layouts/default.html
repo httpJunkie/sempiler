@@ -1,0 +1,71 @@
+---
+facebookUrl : https://www.facebook.com/sempiler/
+twitterUrl : http://twitter.com/ComethTheNerd
+patreonUrl : https://www.patreon.com/sempiler
+youtubeUrl : https://www.youtube.com/playlist?list=PL5Xdzgw07RtR9SMS-ZxZFhYbuSBcygE9i
+visualStudioUrl : https://marketplace.visualstudio.com/items?itemName=QuantumCommune.sempiler
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92238364-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-92238364-2');
+    </script>
+
+    {% include head-links.html %}
+
+    <script>document.title = document.title.toUpperCase();</script>
+  </head>
+  <body>
+    <section class="page-header">
+      {% include quick-links.html %}
+      
+      <h1 class="project-name">{{ page.title | site.title | default: site.github.repository_name }}</h1>
+
+    </section>
+
+    <section class="main-content">
+      {{ content }}
+
+      {% include divider.html %}
+
+      {% include quick-links.html %}
+
+      <footer class="site-footer">
+        <div class='logo'>
+            <img src='{{ site.baseurl }}/images/logo.png'/>
+            &copy; {{ 'now' | date: "%Y" }}
+        </div>
+      </footer>
+    </section>
+
+    <script>
+        if(document.querySelectorAll)
+        {
+          (function() {
+            function addHashLink(anchor) {
+              var name = anchor.getAttribute('name');
+              var heading = anchor.parentNode;
+              
+              heading.addEventListener('click', function () { location.hash = name });
+              heading.setAttribute('style', 'cursor:pointer');
+            }
+
+            document.querySelectorAll('h2 a[name]').forEach(addHashLink);
+            document.querySelectorAll('h3 a[name]').forEach(addHashLink);
+
+          })();
+        }
+      </script>
+
+  </body>
+</html>

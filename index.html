@@ -1,0 +1,77 @@
+---
+layout: default
+title : null
+links :
+    intro:
+        label: "Intro"
+        url: "intro"
+    latest:
+        label: "Latest"
+        url: "latest"
+    quickstart:
+        label: "Quickstart"
+        url: "quickstart"
+    vsc-ext:
+        url: "features/vsc-ext"
+        label: "vsc ext"
+    symbols:
+        url: "symbols"
+        label: "symbols"
+    stub-apis:
+        label: "Stub APIs"
+        url: "stub-apis"
+    fakeywords:
+        url: "features/fakeywords"
+        label: "fakeywords"
+    decorators:
+        url: "features/decorators"
+        label: "decorators"
+    intrinsics:
+        url: "features/intrinsics"
+        label: "intrinsics"
+    type-decls:
+        url: "features/type-decls"
+        label: "type decls"
+    overloads:
+        url: "features/overloads"
+        label: "overloads"
+    arrays:
+        url: "features/arrays"
+        label: "Arrays" 
+    dictionaries:
+        url: "features/dictionaries"
+        label: "dictionaries"
+    errors:
+        url: "features/errors"
+        label: "errors"
+    memory-mgmt:
+        url: "features/memory-mgmt"
+        label: "Memory Mgmt" 
+    preproc:
+        url: "features/preproc"
+        label: "preproc"
+    optionals:
+        url: "features/optionals"
+        label: "optionals"
+    label:
+        url: "features/label"
+        label: "Label" 
+    required:
+        url: "features/required"
+        label: "required"
+    terminator:
+        url: "features/terminator"
+        label: "terminator"
+---
+
+{% include blurb.html %}
+
+{% include divider.html %}
+
+<nav class='main-nav'>
+    {% for item in page.links %}
+        <h2>
+            <a href='{{ item[1].url }}'>{{ item[1].label }}</a>    
+        </h2>
+    {% endfor %}
+</nav>

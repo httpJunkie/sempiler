@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92238364-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-92238364-2');
+    </script>
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Overloads | test</title>
+<meta property="og:title" content="Overloads" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/features/overloads.html" />
+<meta property="og:url" content="http://localhost:4000/features/overloads.html" />
+<meta property="og:site_name" content="test" />
+<script type="application/ld+json">
+{"name":null,"description":null,"author":null,"@type":"WebPage","url":"http://localhost:4000/features/overloads.html","publisher":null,"image":null,"headline":"Overloads","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<meta property="og:image" content="/images/og.png"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/style.css?v=2a545ea4e648e0ec22fbfad7de3702288990c072">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+    <script>document.title = document.title.toUpperCase();</script>
+  </head>
+  <body>
+    <section class="page-header">
+      <nav class='quick-links lozenge'>
+    <a href='/'>
+        <span title='Home'>
+            <img src='/images/home.png' alt='Home logo'/>
+        </span>
+    </a>
+    <a href='http://github.com/QuantumCommune/test' target="_blank">
+        <span title='Github'>
+            <img src='/images/github-logo2.png' alt='Github logo'/>
+        </span>
+    </a>
+    <a href='https://marketplace.visualstudio.com/items?itemName=QuantumCommune.sempiler' target="_blank">
+        <span title='Visual Studio Code'>
+            <img src='/images/vsc-logo2.png' alt='Visual Studio Code logo'/>
+        </span>
+    </a>
+    <a href='https://www.youtube.com/playlist?list=PL5Xdzgw07RtR9SMS-ZxZFhYbuSBcygE9i' target="_blank">
+        <span title='YouTube'>
+            <img src='/images/yt-logo.png' alt='YouTube logo'/>
+        </span>
+    </a>
+    <a href='https://www.facebook.com/sempiler/' target="_blank">
+        <span title='Facebook'>
+            <img src='/images/fb-logo.png' alt='Facebook logo'/>
+        </span>
+    </a>
+    <a href='http://twitter.com/ComethTheNerd' target="_blank">
+        <span title='Twitter'>
+            <img src='/images/twitter-logo.png' alt='Twitter logo'/>
+        </span>
+    </a>
+    <a href='https://www.patreon.com/sempiler' title='Patreon' target="_blank">
+        <span title='Patreon'>
+            <img src='/images/patreon-logo.png' alt='Patreon logo'/>
+        </span>
+    </a>
+</nav>
+      
+      <h1 class="project-name">Overloads</h1>
+
+    </section>
+
+    <section class="main-content">
+      
+<div class='video-container'>
+    <div class='lozenge'>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RaLuY8a_l8c" frameborder="0" gesture="media" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<ul class='feature-meta lozenge'>
+
+<li>
+    <span title="the earliest Sempiler version to support this feature">
+        since <a href="/latest#version"><strong>0.1</strong></a>
+    </span>
+</li>
+
+
+<li>
+    <span title="current Sempiler targets that support this feature">
+        targets 
+        
+        
+            <a href="/latest#c++">C++</a>,
+        
+            <a href="/latest#swift">Swift</a>
+        
+    </span>
+</li>
+
+</ul>
+
+<div class="divider">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<p>Some source languages do not provide an elegant way to achieve overloading. If your chosen source language inherently supports it then you can proceed with defining overloads as normal.</p>
+
+<aside>
+    Semantic transpilation is agnostic of any particular source language or target context
+</aside>
+
+<p>If you are working in a language like TypeScript function overloading is not inherently supported. Instead you often have to parse the argument types in the actual function body to <em>simulate</em> overloading which is ugly and error prone.</p>
+
+<p>Sempiler provides a way to declare overloads and their respective implementations in a clean and concise syntax. Each overload will then be emitted as a separate body in the sempiled output.</p>
+
+<aside>
+    All source code is sempiled and executed in the target context - not in the source language
+</aside>
+
+<p>Instead, Sempiler defines a globally available <code class="highlighter-rouge">overloads</code> function:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">overloads(...bodies : delegate[]) : any</code></td>
+      <td>Define overloads for the enclosing context</td>
+      <td>Only valid as direct child of method or constructor body</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">delegate = (...args : any[]) =&gt; any</code></td>
+      <td>Overload delegate signature</td>
+      <td>Encapsulates all or part of an overload implementation</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This might look daunting so let’s step through it in more detail.</p>
+
+<h2 id="signatures"><a name="signatures"></a>Signatures</h2>
+
+<p>In TypeScript we can already <em>stack signatures</em> on a method or constructor declaration.</p>
+
+<p>This is helpful to us because the type checker will give us the correct Intellisense support for the matching signature at call sites.</p>
+
+<p>Unfortunately it still leaves the ugly aforementioned argument parsing problem, but we can get around this by using <code class="highlighter-rouge">overloads</code>:</p>
+
+<script src="https://gist.github.com/ComethTheNerd/a9ab936dfb4d72ac0d7472db2d1d4932.js"> </script>
+
+<ul>
+  <li>The last declared signature in this example is known as a <a href="#compat-sig"><strong>compatibility signature</strong></a> or (<em>compat sig</em>), and has a special meaning</li>
+  <li>We pass a lambda function for each declared signature (except for the <em>compat sig</em> if present)</li>
+  <li>The lambda signature <strong>must match</strong> the corresponding declared signature it maps to</li>
+  <li>The lambda signature <strong>DOES NOT</strong> need to include any <a href="fakeywords">fakeywords</a> mentioned in the declared signature</li>
+  <li>The order that you pass the lambdas to <code class="highlighter-rouge">overloads</code> must match the order of the declared signatures</li>
+</ul>
+
+<h2 id="compat-sig"><a name="compat-sig"></a>Compat Sig</h2>
+
+<p>Overload signatures often have no common representation between them - their type parameters, parameters or return types can not be represented as one signature.</p>
+
+<p>It is as loose as possible because the <strong>strong typing for overloads comes from their lambda signatures</strong>. This type safety makes lambdas a great mechanism for providing the distinct function bodies.</p>
+
+<p>If we are in a context that requires us to provide a functioin body, TypeScript expects the last declared signature to sufficiently represent all overload signatures. We can get around that with the <strong>compatibility signature</strong>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">(...args : any) : any</code></td>
+      <td>Definition of compatibility signature</td>
+      <td>Return type can be omitted if all overloads are <code class="highlighter-rouge">void</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>By placing this signature last, we provide a workaround for the type checker to be happy.</p>
+
+<p>The compatibility signature is <strong>NOT emitted</strong> so you should not provide any implementations for it. It is <strong>transient</strong>.</p>
+
+<script src="https://gist.github.com/ComethTheNerd/1923132f9d8a25e841f97d0a03d622da.js"> </script>
+
+<aside>
+    Only use a compat sig if overload signatures have no single, common representation
+</aside>
+
+<h2 id="sharing"><a name="sharing"></a>Sharing</h2>
+
+<p>Any statements outside of the <code class="highlighter-rouge">overloads</code> construct will be shared across all overload implementations</p>
+
+<script src="https://gist.github.com/ComethTheNerd/3332edde3a883bad0aa5406638bd5479.js"> </script>
+
+<h2 id="composition"><a name="composition"></a>Composition</h2>
+
+<p>Subsequent calls to <code class="highlighter-rouge">overloads</code> inside the same scope will be combined in the sempiled output. This allows you to compose <a href="#sharing">shared</a> logic and logic specific to a particular overload.</p>
+
+
+      <div class="divider">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+      <nav class='quick-links lozenge'>
+    <a href='/'>
+        <span title='Home'>
+            <img src='/images/home.png' alt='Home logo'/>
+        </span>
+    </a>
+    <a href='http://github.com/QuantumCommune/test' target="_blank">
+        <span title='Github'>
+            <img src='/images/github-logo2.png' alt='Github logo'/>
+        </span>
+    </a>
+    <a href='https://marketplace.visualstudio.com/items?itemName=QuantumCommune.sempiler' target="_blank">
+        <span title='Visual Studio Code'>
+            <img src='/images/vsc-logo2.png' alt='Visual Studio Code logo'/>
+        </span>
+    </a>
+    <a href='https://www.youtube.com/playlist?list=PL5Xdzgw07RtR9SMS-ZxZFhYbuSBcygE9i' target="_blank">
+        <span title='YouTube'>
+            <img src='/images/yt-logo.png' alt='YouTube logo'/>
+        </span>
+    </a>
+    <a href='https://www.facebook.com/sempiler/' target="_blank">
+        <span title='Facebook'>
+            <img src='/images/fb-logo.png' alt='Facebook logo'/>
+        </span>
+    </a>
+    <a href='http://twitter.com/ComethTheNerd' target="_blank">
+        <span title='Twitter'>
+            <img src='/images/twitter-logo.png' alt='Twitter logo'/>
+        </span>
+    </a>
+    <a href='https://www.patreon.com/sempiler' title='Patreon' target="_blank">
+        <span title='Patreon'>
+            <img src='/images/patreon-logo.png' alt='Patreon logo'/>
+        </span>
+    </a>
+</nav>
+
+      <footer class="site-footer">
+        <div class='logo'>
+            <img src='/images/logo.png'/>
+            &copy; 2017
+        </div>
+      </footer>
+    </section>
+
+    <script>
+        if(document.querySelectorAll)
+        {
+          (function() {
+            function addHashLink(anchor) {
+              var name = anchor.getAttribute('name');
+              var heading = anchor.parentNode;
+              
+              heading.addEventListener('click', function () { location.hash = name });
+              heading.setAttribute('style', 'cursor:pointer');
+            }
+
+            document.querySelectorAll('h2 a[name]').forEach(addHashLink);
+            document.querySelectorAll('h3 a[name]').forEach(addHashLink);
+
+          })();
+        }
+      </script>
+
+  </body>
+</html>
