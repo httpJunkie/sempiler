@@ -13,7 +13,7 @@ Sempiler is currently available in the following formats:
 
 <ul class="media-list">
     <li>
-        <a class="lozenge" href="https://marketplace.visualstudio.com/search?term=sempiler&amp;target=VSCode&amp;category=All%20categories&amp;sortBy=Relevance">
+        <a class="lozenge" href="{{ layout.visualStudioUrl }}">
             <img src="{{ site.baseurl }}/images/vsc-logo2.png" alt="visual studio code logo"/>
         </a>
 
