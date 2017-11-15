@@ -14,10 +14,10 @@ Sempiler is currently available in the following formats:
 <ul class="media-list">
     <li>
         <a class="lozenge" href="https://marketplace.visualstudio.com/search?term=sempiler&amp;target=VSCode&amp;category=All%20categories&amp;sortBy=Relevance">
-            <img src="{{ site.baseUrl }}/images/vsc-logo2.png" alt="visual studio code logo"/>
+            <img src="{{ absolute_url }}/images/vsc-logo2.png" alt="visual studio code logo"/>
         </a>
 
-        <a href="{{ site.baseUrl }}/features/vsc-ext">docs</a>
+        <a href="{{ absolute_url }}/features/vsc-ext">docs</a>
     </li>
 </ul>
 
@@ -111,7 +111,7 @@ For now please submit a new language [feature request](#issues-and-requests) to 
 <ul class="media-list">
     <li>
         <a class="lozenge" href="{{ layout.twitterUrl }}" target="_blank">
-            <img src="{{ site.baseUrl }}/images/dho.png" alt="d ho"/>
+            <img src="{{ absolute_url }}/images/dho.png" alt="d ho"/>
         </a>
 
         <a href="{{ layout.twitterUrl }}" target="_blank">D Ho</a>
@@ -126,7 +126,7 @@ For now please submit a new language [feature request](#issues-and-requests) to 
 <ul class="media-list">
     <li>
         <a class="lozenge" href="{{ site.github.repository_url }}" target="_blank">
-            <img src="{{ site.baseUrl }}/images/github-logo2.png" alt="github logo"/>
+            <img src="{{ absolute_url }}/images/github-logo2.png" alt="github logo"/>
         </a>
 
         <a href="{{ site.github.repository_url }}" target="_blank">Github</a>
@@ -134,7 +134,7 @@ For now please submit a new language [feature request](#issues-and-requests) to 
     
     <li>
         <a class="lozenge" href="{{ layout.visualStudioUrl }}" target="_blank">
-            <img src="{{ site.baseUrl }}/images/vsc-logo2.png" alt="visual studio code logo"/>
+            <img src="{{ absolute_url }}/images/vsc-logo2.png" alt="visual studio code logo"/>
         </a>
 
         <a href="{{ layout.visualStudioUrl }}" target="_blank">Code</a>
@@ -143,7 +143,7 @@ For now please submit a new language [feature request](#issues-and-requests) to 
 
     <li>
         <a class="lozenge" href="{{ layout.youtubeUrl }}" target="_blank">
-            <img src="{{ site.baseUrl }}/images/yt-logo.png" alt="youtube logo"/>
+            <img src="{{ absolute_url }}/images/yt-logo.png" alt="youtube logo"/>
         </a>
 
         <a href="{{ layout.youtubeUrl }}" target="_blank">YouTube</a>
@@ -151,7 +151,7 @@ For now please submit a new language [feature request](#issues-and-requests) to 
 
     <li>
         <a class="lozenge" href="{{ layout.facebookUrl }}" target="_blank">
-            <img src="{{ site.baseUrl }}/images/fb-logo.png" alt="facebook logo"/>
+            <img src="{{ absolute_url }}/images/fb-logo.png" alt="facebook logo"/>
         </a>
 
         <a href="{{ layout.facebookUrl }}" target="_blank">Facebook</a>
@@ -160,7 +160,7 @@ For now please submit a new language [feature request](#issues-and-requests) to 
     
     <li>
         <a class="lozenge" href="{{ layout.twitterUrl }}" target="_blank">
-            <img src="{{ site.baseUrl }}/images/twitter-logo.png" alt="twitter logo"/>
+            <img src="{{ absolute_url }}/images/twitter-logo.png" alt="twitter logo"/>
         </a>
 
         <a href="{{ layout.twitterUrl }}" target="_blank">Twitter</a>
@@ -168,7 +168,7 @@ For now please submit a new language [feature request](#issues-and-requests) to 
 
     <li>
         <a class="lozenge" href="{{ layout.patreonUrl }}" target="_blank">
-            <img src="{{ site.baseUrl }}/images/patreon-logo.png" alt="patreon logo"/>
+            <img src="{{ absolute_url }}/images/patreon-logo.png" alt="patreon logo"/>
         </a>
 
         <a href="{{ layout.patreonUrl }}" target="_blank">Patreon</a>

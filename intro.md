@@ -7,5 +7,5 @@ title : Intro
 {% include intro.html %}
 
 <aside class="lozenge">
-    <a href="{{ site.baseUrl }}/quickstart">Click here to get started</a>
+    <a href="{{ absolute_url }}/quickstart">Click here to get started</a>
 </aside>

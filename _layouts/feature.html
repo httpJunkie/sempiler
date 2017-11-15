@@ -8,7 +8,7 @@ layout: default
 {% if page.since %}
 <li>
     <span title="the earliest Sempiler version to support this feature">
-        since <a href="{{ site.baseUrl }}/latest#version"><strong>{{ page.since }}</strong></a>
+        since <a href="{{ absolute_url }}/latest#version"><strong>{{ page.since }}</strong></a>
     </span>
 </li>
 {%  endif %}
@@ -18,7 +18,7 @@ layout: default
         targets 
         
         {% for target in page.targets %}
-            <a href="{{ site.baseUrl }}/latest#{{ target | downcase }}">{{ target }}</a>{% if forloop.last == false %},{% endif %}
+            <a href="{{ absolute_url }}/latest#{{ target | downcase }}">{{ target }}</a>{% if forloop.last == false %},{% endif %}
         {% endfor %}
     </span>
 </li>
