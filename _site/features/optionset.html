@@ -14,16 +14,16 @@
     </script>
 
     <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>Preproc | sempiler</title>
-<meta property="og:title" content="Preproc" />
+<title>OptionSet | sempiler</title>
+<meta property="og:title" content="OptionSet" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="X-platform, native code straight from your favourite source language. No Virtual Machines or frameworks." />
 <meta property="og:description" content="X-platform, native code straight from your favourite source language. No Virtual Machines or frameworks." />
-<link rel="canonical" href="http://localhost:4000/features/preproc.html" />
-<meta property="og:url" content="http://localhost:4000/features/preproc.html" />
+<link rel="canonical" href="http://localhost:4000/features/optionset.html" />
+<meta property="og:url" content="http://localhost:4000/features/optionset.html" />
 <meta property="og:site_name" content="sempiler" />
 <script type="application/ld+json">
-{"name":null,"description":"X-platform, native code straight from your favourite source language. No Virtual Machines or frameworks.","author":null,"@type":"WebPage","url":"http://localhost:4000/features/preproc.html","publisher":null,"image":null,"headline":"Preproc","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"name":null,"description":"X-platform, native code straight from your favourite source language. No Virtual Machines or frameworks.","author":null,"@type":"WebPage","url":"http://localhost:4000/features/optionset.html","publisher":null,"image":null,"headline":"OptionSet","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -94,24 +94,18 @@
     </a>
 </nav>
       
-      <h1 class="project-name">Preproc</h1>
+      <h1 class="project-name">OptionSet</h1>
 
     </section>
 
     <section class="main-content">
       
-<div class='video-container'>
-    <div class='lozenge'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EL4ULtMxdIA" frameborder="0" gesture="media" allowfullscreen></iframe>
-    </div>
-</div>
-
 
 <ul class='feature-meta lozenge'>
 
 <li>
     <span title="the earliest Sempiler version to support this feature">
-        since <a href="/latest#version"><strong>0.1</strong></a>
+        since <a href="/latest#version"><strong>0.1.2</strong></a>
     </span>
 </li>
 
@@ -121,7 +115,7 @@
         targets 
         
         
-            <a href="/latest#c++">C++</a>
+            <a href="/latest#swift">Swift</a>
         
     </span>
 </li>
@@ -134,43 +128,45 @@
     <div></div>
 </div>
 
-<p>We utilise the <code class="highlighter-rouge">preproc</code> <a href="fakeywords">fakeyword</a> to designate that a statement should be treated as a <strong>preprocessor directive</strong>.</p>
+<p>Sempiler supports <code class="highlighter-rouge">OptionSet</code>, a set interface to a bit set.</p>
 
-<h2 id="variables"><a name="variables"></a>Variables</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Usage</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">OptionSet</code></td>
+      <td>OptionSet type definition</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
-<p>For variable declarations we specify the type as <code class="highlighter-rouge">preproc | X</code> where <code class="highlighter-rouge">X</code> is the actual data type:</p>
+<h2 id="example"><a name="example"></a>Example</h2>
 
-<script src="https://gist.github.com/ComethTheNerd/c0a9fba21703e55a44dcd15203bfadef.js"> </script>
+<p>Consider this example in TypeScript, a language whereby it is commonplace to represent bit sets (or ‘masks’, ‘flags’ etc) using the bitwise OR operator <code class="highlighter-rouge">|</code>.</p>
 
-<p>This will generate the equivalent to a preprocessor <code class="highlighter-rouge">#define</code> statement on <strong>target platforms that support preprocessor directives</strong>.</p>
+<p>Thus, the syntax for <code class="highlighter-rouge">OptionSet</code> in TypeScript is the same (in order to maintain a feeling of familiarity with the source language).</p>
 
-<h2 id="macros"><a name="macros"></a>Macros</h2>
+<script src="https://gist.github.com/ComethTheNerd/58407ce104d4d5b76fe6613d761e4695.js"> </script>
 
-<p>The <a href="../stub-apis">stub APIs</a> for your target platform will provide many standard macros, such as <code class="highlighter-rouge">__FILE__</code> and <code class="highlighter-rouge">__LINE__</code>.</p>
+<ul>
+  <li><strong>NOTE</strong> The syntax for <code class="highlighter-rouge">OptionSet</code> depends on how bit sets are represented generally in your <strong>source language</strong></li>
+  <li><strong>NOTE</strong> The name for this feature comes from Swift and may be renamed in future to be agnostic</li>
+</ul>
 
-<p>Support for <strong>defining your own macro functions</strong> is a future enhancement that is not currently supported by Sempiler.</p>
+<aside>
+    Semantic transpilation is agnostic of any particular source language or target context
+</aside>
 
-<p>The current proposal is to use the same <a href="#variables">define</a> mechanism for variables and macros, and treat those with <strong>lambda function initializers as macros</strong>.</p>
+<h2 id="platform-specific"><a name="platform-specific"></a>Platform Specific</h2>
 
-<p>Feedback on this and any other Sempiler topics can be relayed via <a href="../latest#issues-and-requests">these channels</a>.</p>
-
-<h2 id="if"><a name="if"></a>If</h2>
-
-<p>For if statements we provide a type assertion on the condition that specifies it should be interpreted as <code class="highlighter-rouge">preproc</code>:</p>
-
-<script src="https://gist.github.com/ComethTheNerd/f20e4d0596c1655d04ffa64805ba7f66.js"> </script>
-
-<p>This will generate the equivalent to a preprocessor <code class="highlighter-rouge">#if</code> statement on <strong>target platforms that support preprocessor directives</strong>.</p>
-
-<h3 id="elif"><a name="elif"></a>Elif</h3>
-
-<p>You do <strong>NOT</strong> need to repeat <code class="highlighter-rouge">preproc</code> on any <code class="highlighter-rouge">else if</code> branches. Their preprocessor status is inferred from the root <code class="highlighter-rouge">if</code> statement that they belong to.</p>
-
-<script src="https://gist.github.com/ComethTheNerd/5209e7c8b9b87d3755701cb12c23a10f.js"> </script>
-
-<h3 id="ifdef"><a name="ifdef"></a>IfDef</h3>
-
-<p>Support for <code class="highlighter-rouge">ifdef</code> is a future enhancement that is not currently supported by Sempiler.</p>
+<p>You can only use <code class="highlighter-rouge">OptionSet</code> if it is supported by your target platform (and has been <a href="../latest#issues-and-requests">implemented</a> in Sempiler!), eg. Swift.</p>
 
 
       <div class="divider">

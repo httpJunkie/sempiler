@@ -5,7 +5,9 @@ title : Latest
 
 ## <a name="version"></a>Version
 
-The current version of Sempiler is **0.1**.
+The current version of Sempiler is **0.1.2**.
+
+- **NOT** to be confused with the version number for each [distro](#distros).
 
 ## <a name="distros"></a>Distros
 
